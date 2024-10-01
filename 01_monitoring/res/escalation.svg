@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" fill="#D7D7D7" />
+
+  <!-- Alert Priority -->
+  <rect x="50" y="50" width="200" height="400" fill="white" stroke="black" stroke-width="2" />
+  <text x="150" y="80" text-anchor="middle" font-size="16">Alert Priority</text>
+
+  <rect x="70" y="100" width="160" height="100" fill="white" stroke="black" stroke-width="1" />
+  <text x="150" y="150" text-anchor="middle" font-size="14">Critical</text>
+
+  <rect x="70" y="210" width="160" height="100" fill="white" stroke="black" stroke-width="1" />
+  <text x="150" y="260" text-anchor="middle" font-size="14">Warning</text>
+
+  <rect x="70" y="320" width="160" height="100" fill="white" stroke="black" stroke-width="1" />
+  <text x="150" y="370" text-anchor="middle" font-size="14">Info</text>
+
+  <!-- Escalation Process -->
+  <rect x="300" y="50" width="450" height="400" fill="white" stroke="black" stroke-width="2" />
+  <text x="525" y="80" text-anchor="middle" font-size="16">Escalation Process</text>
+
+  <!-- Critical Path -->
+  <rect x="320" y="100" width="140" height="40" fill="white" stroke="black" stroke-width="1" />
+  <text x="390" y="125" text-anchor="middle" font-size="12">Automated Alert</text>
+
+  <line x1="460" y1="120" x2="490" y2="120" stroke="black" stroke-width="1" />
+  <polygon points="488,117 494,117 491,124" fill="black" />
+
+  <rect x="490" y="100" width="140" height="40" fill="white" stroke="black" stroke-width="1" />
+  <text x="560" y="125" text-anchor="middle" font-size="12">On-call Engineer</text>
+
+  <line x1="560" y1="140" x2="560" y2="170" stroke="black" stroke-width="1" />
+  <polygon points="557,168 563,168 560,175" fill="black" />
+
+  <rect x="490" y="170" width="140" height="40" fill="white" stroke="black" stroke-width="1" />
+  <text x="560" y="195" text-anchor="middle" font-size="12">Team Lead</text>
+
+  <line x1="560" y1="210" x2="560" y2="240" stroke="black" stroke-width="1" />
+  <polygon points="557,238 563,238 560,245" fill="black" />
+
+  <rect x="490" y="240" width="140" height="40" fill="white" stroke="black" stroke-width="1" />
+  <text x="560" y="265" text-anchor="middle" font-size="12">Management</text>
+
+  <!-- Warning Path -->
+  <rect x="320" y="210" width="140" height="40" fill="white" stroke="black" stroke-width="1" />
+  <text x="390" y="235" text-anchor="middle" font-size="12">Automated Alert</text>
+
+  <line x1="460" y1="230" x2="490" y2="230" stroke="black" stroke-width="1" />
+  <polygon points="488,227 494,227 491,234" fill="black" />
+
+  <rect x="490" y="210" width="140" height="40" fill="white" stroke="black" stroke-width="1" />
+  <text x="560" y="235" text-anchor="middle" font-size="12">On-call Engineer</text>
+
+  <!-- Info Path -->
+  <rect x="490" y="320" width="140" height="40" fill="white" stroke="black" stroke-width="1" />
+  <text x="560" y="345" text-anchor="middle" font-size="12">Monitoring Dashboard</text>
+
+  <!-- Connecting Lines with Arrows -->
+  <line x1="230" y1="150" x2="320" y2="120" stroke="black" stroke-width="1" stroke-dasharray="5,5" />
+  <polygon points="318,117 324,117 321,124" fill="black" />
+
+  <line x1="230" y1="260" x2="320" y2="230" stroke="black" stroke-width="1" stroke-dasharray="5,5" />
+  <polygon points="318,227 324,227 321,234" fill="black" />
+
+  <line x1="230" y1="370" x2="490" y2="340" stroke="black" stroke-width="1" stroke-dasharray="5,5" />
+  <polygon points="488,337 494,337 491,344" fill="black" />
+</svg>

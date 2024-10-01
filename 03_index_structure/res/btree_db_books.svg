@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 800 350">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .title { font-size: 18px; font-weight: bold; }
+    .node { fill: white; stroke: black; stroke-width: 2; }
+    .link { stroke: black; stroke-width: 2; }
+    .level-text { font-size: 14px; }
+  </style>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">'author' index for books tables</text>
+
+  <!-- Root Node -->
+  <rect x="400" y="60" width="200" height="50" class="node" />
+  <text x="500" y="90" text-anchor="middle">All authors(A-Z)</text>
+
+  <!-- Internal Nodes -->
+  <rect x="300" y="160" width="180" height="50" class="node" />
+  <text x="390" y="190" text-anchor="middle">A-M Authors</text>
+
+  <rect x="520" y="160" width="180" height="50" class="node" />
+  <text x="610" y="190" text-anchor="middle">N-Z Authors</text>
+
+  <!-- Leaf Nodes -->
+  <rect x="270" y="260" width="120" height="50" class="node" />
+  <text x="330" y="290" text-anchor="middle">A-F Authors</text>
+
+  <rect x="400" y="260" width="120" height="50" class="node" />
+  <text x="460" y="290" text-anchor="middle">G-M Authors</text>
+
+  <rect x="530" y="260" width="120" height="50" class="node" />
+  <text x="590" y="290" text-anchor="middle">N-S Authors</text>
+
+  <rect x="660" y="260" width="120" height="50" class="node" />
+  <text x="720" y="290" text-anchor="middle">T-Z Authors</text>
+
+  <!-- Connections -->
+  <line x1="500" y1="110" x2="390" y2="160" class="link" />
+  <line x1="500" y1="110" x2="610" y2="160" class="link" />
+
+  <line x1="390" y1="210" x2="330" y2="260" class="link" />
+  <line x1="390" y1="210" x2="460" y2="260" class="link" />
+
+  <line x1="610" y1="210" x2="590" y2="260" class="link" />
+  <line x1="610" y1="210" x2="720" y2="260" class="link" />
+
+  <!-- Levels -->
+  <text x="50" y="90" class="level-text" font-weight="bold">Level 1: Root Node</text>
+  <text x="70" y="110" class="level-text">All Authors</text>
+
+  <text x="50" y="190" class="level-text" font-weight="bold">Level 2: Internal Nodes</text>
+  <text x="70" y="210" class="level-text">Author Ranges</text>
+
+  <text x="50" y="290" class="level-text" font-weight="bold">Level 3: Leaf Nodes</text>
+  <text x="70" y="310" class="level-text">Specific Authors</text>
+</svg>

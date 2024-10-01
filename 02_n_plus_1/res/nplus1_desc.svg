@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 400 300">
+  <rect x="10" y="10" width="380" height="280" fill="none" stroke="#ccc" stroke-width="2"/>
+
+  <!-- Timeline (arrow) -->
+  <line x1="30" y1="150" x2="360" y2="150" stroke="#000" stroke-width="2"/>
+  <polygon points="360,150 350,145 350,155" fill="#000"/>
+
+  <!-- Main Query -->
+  <rect x="40" y="130" width="60" height="20" fill="#f0f0f0" stroke="#000"/>
+  <text x="70" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Main Query</text>
+
+  <!-- Child Queries -->
+  <rect x="110" y="130" width="60" height="20" fill="#f0f0f0" stroke="#000"/>
+  <text x="140" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Child Query</text>
+  <rect x="180" y="130" width="60" height="20" fill="#f0f0f0" stroke="#000"/>
+  <text x="210" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Child Query</text>
+  <text x="280" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14">...</text>
+
+  <!-- N+1 Problem Highlight -->
+  <rect x="105" y="120" width="220" height="40" fill="none" stroke="#f00" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="210" y="110" font-family="Arial, sans-serif" font-size="12" fill="#f00">N of N+1</text>
+
+</svg>

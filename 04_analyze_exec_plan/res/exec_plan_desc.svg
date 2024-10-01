@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 800 350">
+  <style>
+    .box { fill: white; stroke: black; stroke-width: 2; }
+    .user-box { fill: white; stroke: red; stroke-width: 3; }
+    .index-box { fill: lightyellow; stroke: blue; stroke-width: 3; }
+    .arrow { fill: none; stroke: black; stroke-width: 2; }
+    .divider { stroke: #666; stroke-width: 2; stroke-dasharray: 5,5; }
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .user-text { font-weight: bold; }
+    .index-text { font-weight: bold; fill: blue; }
+    .label { font-size: 12px; fill: #666; }
+  </style>
+
+  <!-- Divider line -->
+  <line class="divider" x1="0" y1="130" x2="800" y2="130" />
+
+  <!-- Boxes -->
+  <rect class="user-box" x="50" y="50" width="150" height="60" rx="10" ry="10"/>
+  <rect class="box" x="50" y="170" width="150" height="60" rx="10" ry="10"/>
+  <rect class="index-box" x="250" y="170" width="150" height="60" rx="10" ry="10"/>
+  <rect class="box" x="450" y="170" width="150" height="60" rx="10" ry="10"/>
+  <rect class="box" x="250" y="270" width="150" height="60" rx="10" ry="10"/>
+  <rect class="box" x="450" y="270" width="150" height="60" rx="10" ry="10"/>
+  <rect class="user-box" x="600" y="50" width="150" height="60" rx="10" ry="10"/>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M125 110 L125 170"/>
+  <path class="arrow" d="M200 200 L250 200"/>
+  <path class="arrow" d="M400 200 L450 200"/>
+  <path class="arrow" d="M525 230 L525 270"/>
+  <path class="arrow" d="M325 230 L325 270"/>
+  <path class="arrow" d="M600 200 L675 110"/>
+
+  <!-- Text -->
+  <text class="user-text" x="65" y="85">SQL Query</text>
+  <text x="65" y="205">Query Parser</text>
+  <text class="index-text" x="265" y="195">Query Optimizer</text>
+  <text x="465" y="205">Plan Generator</text>
+  <text x="265" y="305">Execution Engine</text>
+  <text x="465" y="305">Data Access</text>
+  <text class="user-text" x="615" y="85">Result Set</text>
+
+  <!-- Additional text for Query Optimizer -->
+  <text class="index-text" x="265" y="215" font-size="12">(Index Check)</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="400" fill="#E8E8E8" />
+
+  <!-- CPU Usage -->
+  <rect x="50" y="50" width="200" height="100" fill="white" stroke="black" stroke-width="2" />
+  <text x="150" y="80" text-anchor="middle" font-size="14" font-weight="bold">CPU Usage</text>
+  <rect x="70" y="100" width="160" height="20" fill="white" stroke="black" stroke-width="1" />
+  <rect x="70" y="100" width="96" height="20" fill="#B2DFDB" />
+  <text x="150" y="115" text-anchor="middle" fill="black" font-size="12">60% (Normal)</text>
+
+  <!-- Memory Usage -->
+  <rect x="350" y="50" width="200" height="100" fill="white" stroke="red" stroke-width="2" />
+  <text x="450" y="80" text-anchor="middle" font-size="14" font-weight="bold">Memory Usage</text>
+  <rect x="370" y="100" width="160" height="20" fill="white" stroke="black" stroke-width="1" />
+  <rect x="370" y="100" width="144" height="20" fill="#00695C" />
+  <text x="450" y="115" text-anchor="middle" fill="red" font-size="12" font-weight="bold">90% (Critical)</text>
+
+  <!-- Disk I/O -->
+  <rect x="50" y="200" width="200" height="100" fill="white" stroke="black" stroke-width="2" />
+  <text x="150" y="230" text-anchor="middle" font-size="14" font-weight="bold">Disk I/O</text>
+  <rect x="70" y="250" width="160" height="20" fill="white" stroke="black" stroke-width="1" />
+  <rect x="70" y="250" width="112" height="20" fill="#26A69A" />
+  <text x="150" y="265" text-anchor="middle" fill="red" font-size="12">70% (Alert)</text>
+
+  <!-- Connection Count -->
+  <rect x="350" y="200" width="200" height="100" fill="white" stroke="black" stroke-width="2" />
+  <text x="450" y="230" text-anchor="middle" font-size="14" font-weight="bold">Connection Count</text>
+  <rect x="370" y="250" width="160" height="20" fill="white" stroke="black" stroke-width="1" />
+  <rect x="370" y="250" width="80" height="20" fill="#B2DFDB" />
+  <text x="450" y="265" text-anchor="middle" fill="black" font-size="12">50% (Normal)</text>
+
+  <!-- Legend -->
+  <rect x="50" y="350" width="500" height="30" fill="white" stroke="black" stroke-width="1" />
+  <text x="70" y="370" font-size="12">Normal</text>
+  <text x="300" y="370" font-size="12" fill="red">Alert</text>
+  <text x="450" y="370" font-size="12" fill="red" font-weight="bold">Critical</text>
+</svg>

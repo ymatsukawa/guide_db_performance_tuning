@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Large Dataset -->
+  <g transform="translate(50,50)">
+    <rect width="200" height="100" fill="#f0f0f0" stroke="#000000" stroke-width="2"/>
+    <text x="100" y="55" text-anchor="middle" font-size="16" font-weight="bold">Large Dataset</text>
+  </g>
+
+  <!-- Sharding Key -->
+  <g transform="translate(300,70)">
+    <rect width="150" height="60" fill="#e0e0e0" stroke="#000000" stroke-width="2"/>
+    <text x="75" y="35" text-anchor="middle" font-size="14" font-weight="bold">Sharding Key</text>
+    <text x="75" y="55" text-anchor="middle" font-size="12">(e.g., user_id)</text>
+  </g>
+
+  <!-- Shards -->
+  <g transform="translate(100,250)">
+    <rect width="150" height="80" fill="#d0d0d0" stroke="#000000" stroke-width="2"/>
+    <text x="75" y="30" text-anchor="middle" font-size="14" font-weight="bold">Shard 1</text>
+    <text x="75" y="50" text-anchor="middle" font-size="12">ID Range 1-1000</text>
+  </g>
+
+  <g transform="translate(325,250)">
+    <rect width="150" height="80" fill="#d0d0d0" stroke="#000000" stroke-width="2"/>
+    <text x="75" y="30" text-anchor="middle" font-size="14" font-weight="bold">Shard 2</text>
+    <text x="75" y="50" text-anchor="middle" font-size="12">ID Range 1001-2000</text>
+  </g>
+
+  <g transform="translate(550,250)">
+    <rect width="150" height="80" fill="#d0d0d0" stroke="#000000" stroke-width="2"/>
+    <text x="75" y="30" text-anchor="middle" font-size="14" font-weight="bold">Shard 3</text>
+    <text x="75" y="50" text-anchor="middle" font-size="12">ID Range 2001-3000</text>
+  </g>
+
+  <!-- Sharding Arrows -->
+  <line x1="250" y1="100" x2="300" y2="100" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="100" x2="175" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="100" x2="400" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="100" x2="625" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Client -->
+  <g transform="translate(375,500)">
+    <circle cx="50" cy="0" r="20" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+    <text x="50" y="40" text-anchor="middle" font-size="14">Client</text>
+  </g>
+
+  <!-- Query Router -->
+  <g transform="translate(325,400)">
+    <rect width="150" height="60" fill="#e0e0e0" stroke="#000000" stroke-width="2"/>
+    <text x="75" y="35" text-anchor="middle" font-size="14" font-weight="bold">Query Router</text>
+  </g>
+
+  <!-- Client Arrows -->
+  <line x1="425" y1="500" x2="425" y2="460" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="325" y1="430" x2="175" y2="330" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <line x1="400" y1="400" x2="400" y2="330" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <line x1="475" y1="430" x2="625" y2="330" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+
+  <!-- Labels -->
+  <text x="275" y="85" text-anchor="middle" font-size="12">Divide by</text>
+  <text x="450" y="85" text-anchor="middle" font-size="12">Distribute data</text>
+  <text x="425" y="550" text-anchor="middle" font-size="12">Query</text>
+  <text x="300" y="380" text-anchor="middle" font-size="12" fill="#666666">Route to appropriate shard</text>
+</svg>

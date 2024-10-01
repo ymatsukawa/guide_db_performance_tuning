@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 600 400">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .title { font-size: 18px; font-weight: bold; }
+    .table { fill: none; stroke: black; stroke-width: 2; }
+    .row { fill: white; stroke: black; }
+    .scan-arrow { fill: none; stroke: red; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="red"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" class="title">Full Table Scan</text>
+
+  <!-- Table -->
+  <rect x="100" y="50" width="400" height="300" class="table"/>
+
+  <!-- Table Rows -->
+  <rect x="100" y="50" width="400" height="30" class="row"/>
+  <rect x="100" y="80" width="400" height="30" class="row"/>
+  <rect x="100" y="110" width="400" height="30" class="row"/>
+  <rect x="100" y="140" width="400" height="30" class="row"/>
+  <rect x="100" y="170" width="400" height="30" class="row"/>
+  <rect x="100" y="200" width="400" height="30" class="row"/>
+  <rect x="100" y="230" width="400" height="30" class="row"/>
+  <rect x="100" y="260" width="400" height="30" class="row"/>
+  <rect x="100" y="290" width="400" height="30" class="row"/>
+  <rect x="100" y="320" width="400" height="30" class="row"/>
+
+  <!-- Scan Arrow -->
+  <path d="M 50,65 H 80 M 50,95 H 80 M 50,125 H 80 M 50,155 H 80 M 50,185 H 80 M 50,215 H 80 M 50,245 H 80 M 50,275 H 80 M 50,305 H 80 M 50,335 H 80" class="scan-arrow"/>
+  <line x1="50" y1="50" x2="50" y2="350" class="scan-arrow"/>
+
+  <!-- Labels -->
+  <text x="300" y="70" text-anchor="middle">Table</text>
+  <text x="40" y="200" text-anchor="end" transform="rotate(-90 40,200)">Scan Direction</text>
+
+  <!-- Explanation -->
+  <text x="300" y="380" text-anchor="middle" font-style="italic">Every row in the table is checked sequentially</text>
+</svg>

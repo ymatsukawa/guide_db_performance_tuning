@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 600 400">
+  <style>
+    .box { fill: white; stroke: black; stroke-width: 2; }
+    .arrow { fill: none; stroke: black; stroke-width: 2; }
+    text { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+  </style>
+
+  <!-- Boxes -->
+  <rect x="175" y="50" width="150" height="60" class="box"/>
+  <rect x="25" y="300" width="150" height="60" class="box"/>
+  <rect x="325" y="300" width="150" height="60" class="box"/>
+
+  <!-- Arrows -->
+  <path d="M300 110 L385 290" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M325 330 L185 330" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M105 300 L210 120" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Text -->
+  <text x="250" y="85">Design and Planning</text>
+  <text x="100" y="335">Improvement</text>
+  <text x="400" y="335">Execution and Analysis</text>
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

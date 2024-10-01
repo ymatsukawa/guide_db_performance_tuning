@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 800 400">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .title { font-size: 18px; font-weight: bold; }
+    .node { fill: white; stroke: black; stroke-width: 2; }
+    .link { stroke: black; stroke-width: 2; }
+  </style>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Library Structure</text>
+
+  <!-- Root Node -->
+  <rect x="200" y="60" width="400" height="60" class="node" />
+  <text x="400" y="95" text-anchor="middle">Main info board (A-Z)</text>
+
+  <!-- Internal Nodes -->
+  <rect x="100" y="180" width="280" height="60" class="node" />
+  <text x="240" y="215" text-anchor="middle">A-M Section</text>
+
+  <rect x="420" y="180" width="280" height="60" class="node" />
+  <text x="560" y="215" text-anchor="middle">N-Z Section</text>
+
+  <!-- Leaf Nodes -->
+  <rect x="50" y="300" width="180" height="60" class="node" />
+  <text x="140" y="330" text-anchor="middle">A-F Shelf</text>
+  <text x="140" y="350" text-anchor="middle">(Book locations)</text>
+
+  <rect x="250" y="300" width="120" height="60" class="node" />
+  <text x="310" y="330" text-anchor="middle">G-M Shelf</text>
+  <text x="310" y="350" text-anchor="middle">(Book locations)</text>
+
+  <rect x="430" y="300" width="120" height="60" class="node" />
+  <text x="490" y="330" text-anchor="middle">N-S Shelf</text>
+  <text x="490" y="350" text-anchor="middle">(Book locations)</text>
+
+  <rect x="570" y="300" width="180" height="60" class="node" />
+  <text x="660" y="330" text-anchor="middle">T-Z Shelf</text>
+  <text x="660" y="350" text-anchor="middle">(Book locations)</text>
+
+  <!-- Connections -->
+  <line x1="400" y1="120" x2="240" y2="180" class="link" />
+  <line x1="400" y1="120" x2="560" y2="180" class="link" />
+
+  <line x1="240" y1="240" x2="140" y2="300" class="link" />
+  <line x1="240" y1="240" x2="340" y2="300" class="link" />
+
+  <line x1="560" y1="240" x2="460" y2="300" class="link" />
+  <line x1="560" y1="240" x2="660" y2="300" class="link" />
+</svg>

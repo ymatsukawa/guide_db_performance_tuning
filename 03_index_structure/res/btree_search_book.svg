@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 800 500">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .title { font-size: 18px; font-weight: bold; }
+    .node { fill: white; stroke: black; stroke-width: 2; }
+    .highlight { fill: lightyellow; }
+    .arrow { fill: none; stroke: red; stroke-width: 2; marker-end: url(#arrowhead); }
+    .step-text { font-size: 12px; fill: red; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="red"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Searching for ... "J"ames C Maxwell</text>
+
+  <!-- Root Node -->
+  <rect x="350" y="60" width="200" height="50" class="node highlight" />
+  <text x="450" y="90" text-anchor="middle">Root Node (A-Z)</text>
+
+  <!-- Internal Nodes -->
+  <rect x="200" y="160" width="180" height="50" class="node highlight" />
+  <text x="290" y="190" text-anchor="middle">A-M Authors</text>
+
+  <rect x="520" y="160" width="180" height="50" class="node" />
+  <text x="610" y="190" text-anchor="middle">N-Z Authors</text>
+
+  <!-- Leaf Nodes -->
+  <rect x="50" y="260" width="140" height="50" class="node" />
+  <text x="120" y="285" text-anchor="middle">A-F Authors</text>
+  <text x="120" y="305" text-anchor="middle">(Book IDs)</text>
+
+  <rect x="220" y="260" width="140" height="50" class="node highlight" />
+  <text x="290" y="285" text-anchor="middle">G-M Authors</text>
+  <text x="290" y="305" text-anchor="middle">(Book IDs: 15, 23, 42)</text>
+
+  <rect x="390" y="260" width="140" height="50" class="node" />
+  <text x="460" y="285" text-anchor="middle">N-S Authors</text>
+  <text x="460" y="305" text-anchor="middle">(Book IDs)</text>
+
+  <rect x="560" y="260" width="140" height="50" class="node" />
+  <text x="630" y="285" text-anchor="middle">T-Z Authors</text>
+  <text x="630" y="305" text-anchor="middle">(Book IDs)</text>
+
+  <!-- Connections -->
+  <line x1="450" y1="110" x2="290" y2="160" stroke="black" stroke-width="2" />
+  <line x1="450" y1="110" x2="610" y2="160" stroke="black" stroke-width="2" />
+
+  <line x1="290" y1="210" x2="120" y2="260" stroke="black" stroke-width="2" />
+  <line x1="290" y1="210" x2="290" y2="260" stroke="black" stroke-width="2" />
+
+  <line x1="610" y1="210" x2="460" y2="260" stroke="black" stroke-width="2" />
+  <line x1="610" y1="210" x2="630" y2="260" stroke="black" stroke-width="2" />
+
+  <!-- Search Path -->
+  <path d="M 450,110 Q 450,135 370,160" class="arrow" />
+  <text x="470" y="140" class="step-text">Step 1</text>
+
+  <path d="M 290,210 Q 290,235 290,240" class="arrow" />
+  <text x="310" y="240" class="step-text">Step 2</text>
+
+  <path d="M 290,310 Q 290,335 290,360" class="arrow" />
+  <text x="310" y="340" class="step-text">Step 3</text>
+
+  <!-- Result -->
+  <rect x="220" y="360" width="140" height="50" class="node highlight" />
+  <text x="290" y="385" text-anchor="middle">James C Maxwell</text>
+  <text x="290" y="405" text-anchor="middle">Book ID: 23</text>
+
+  <!-- Legend -->
+  <rect x="50" y="430" width="20" height="20" class="node" />
+  <text x="80" y="445" dominant-baseline="middle">Node</text>
+
+  <rect x="50" y="460" width="20" height="20" class="node highlight" />
+  <text x="80" y="475" dominant-baseline="middle">Visited Node</text>
+
+  <line x1="200" y1="445" x2="210" y2="445" class="arrow" />
+  <text x="230" y="445" dominant-baseline="middle">Search Path</text>
+</svg>
