@@ -21,8 +21,8 @@ Web システムの場合は **1 秒超えならばスロークエリ** が目�
 ```sql
 -- PostgreSQL
 -- postgresql.conf
-ALTER SYSTEM SET log_min_duration_statement = 2000;
-ALTER SYSTEM SET log_directory = 'pg_log';
+log_min_duration_statement = 2000
+log_directory = 'pg_log'
 
 -- MySQL
 -- my.cnf
