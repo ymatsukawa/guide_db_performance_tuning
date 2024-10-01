@@ -27,9 +27,9 @@ ALTER SYSTEM SET log_directory = 'pg_log';
 -- MySQL
 -- my.cnf
 [mysqld]
-SET GLOBAL slow_query_log = 1;
-SET GLOBAL slow_query_log_file = '/var/log/mysql/slow.log';
-SET GLOBAL long_query_time = 2;
+slow_query_log=1
+slow_query_log_file=/var/log/mysql/slow.log
+long_query_time=2
 ```
 
 ## スロークエリ対策の流れ
