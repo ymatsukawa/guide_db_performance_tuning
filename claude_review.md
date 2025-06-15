@@ -1,0 +1,9 @@
+- [ ] Using plain form endings (だ/である)
+  - Examples: `select は選択構文である`, `mysql は RDBMS だ`
+- [ ] Whether sentence is simple?
+  - Avoid 2 lines sentence
+- [ ] Whether "word" is easy for intermediate?
+  - Use "example(s)"
+- [ ] Whether Japanese is appropriate?
+- [ ] updated only .md files
+  - Keep svg and other image file
